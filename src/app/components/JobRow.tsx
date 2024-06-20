@@ -1,10 +1,15 @@
+"use client";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
-function JobRow() {
+export function JobRow() {
   return (
     <>
       <div className="bg-white p-4 rounded-lg shadow-sm relative">
-        <div className="absolute top-2 right-4">heart</div>
+        <div className="absolute cursor-pointer top-4 right-4">
+          <FontAwesomeIcon className="size-4 text-gray-300" icon={faHeart} />
+        </div>
         <div className="flex grow gap-4">
           <div className="content-center">
             <img
@@ -28,5 +33,4 @@ function JobRow() {
     </>
   );
 }
-
 export default JobRow;
