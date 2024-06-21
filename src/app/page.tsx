@@ -1,11 +1,6 @@
 import Hero from "./components/Hero";
 import Jobs from "./components/Jobs";
-import {
-  getSignInUrl,
-  getSignUpUrl,
-  getUser,
-  signOut,
-} from "@workos-inc/authkit-nextjs";
+import { getSignInUrl, getSignUpUrl } from "@workos-inc/authkit-nextjs";
 
 export default async function Home() {
   // Retrieves the user from the session or returns `null` if no user is signed in
